@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Day</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <script src="./script/script.js" defer></script>
+</head>
+
+<body>
+    <h1>D-Day</h1>
+    <div id="d-day-container">
+        <div class="d-day-child-container">
+            <span class="info-txt" id="days">0</span>
+            <span class="info-txt">일</span>
+        </div>
+        <div class="d-day-child-container">
+            <span class="info-txt" id="hours">0</span>
+            <span class="info-txt">시간</span>
+        </div>
+        <div class="d-day-child-container">
+            <span class="info-txt" id="min">0</span>
+            <span class="info-txt">분</span>
+        </div>
+        <div class="d-day-child-container">
+            <span class="info-txt" id="sec">0</span>
+            <span class="info-txt">초</span>
+        </div>
+    </div>
+    <div id="d-day-message"></div>
+    <div id="target-selector">
+        <input type="text" id="target-year-input" class="target-input" autocomplete="off" maxlength="4" /> -
+        <input type="text" id="target-month-input" class="target-input" autocomplete="off" maxlength="2" /> -
+        <input type="text" id="target-date-input" class="target-input" autocomplete="off" maxlength="2" />
+    </div>
+    <div class="btn-wrap">
+        <button type="button" class="btn" id="start-btn" onclick="starter()">카운트다운 시작</button>
+        <button type="button" class="btn" id="stop-btn" onclick="resetTimer()">타이머 초기화</button>
+    </div>
+</body>
+
+</html>
